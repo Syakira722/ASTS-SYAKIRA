@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>ASTS PEMROGRAMAN!</title>
+</head>
+  <h1>
+    "PROGRAM ASTS SYAKIRA"
+  </h1>
+<body>
+  <script>
+// Program Hak Pilih Sederhana (tanpa tanda $)
+
+let jumlahPeserta =(prompt("Masukkan jumlah peserta:"));
+
+for (let i = 1; i <= jumlahPeserta; i++) {
+  let nama = prompt("Masukkan nama peserta ke-" + i + ":");
+  let usia = prompt("Masukkan usia " + nama + ":");
+  let statusMenikah = prompt("Apakah sudah menikah? (ya/tidak):");
+
+  let hasil = "";
+
+  if (usia <= 15) {
+    hasil = " tidak dapat hak pilih ";
+  } else if (usia <= 17) {
+    hasil = " dapat hak pilih ";
+  } else {
+    hasil = " dapat hak pilih ";
+  }
+
+  document.write( nama + " (" + usia + " tahun, " + 
+    (statusMenikah === "ya" ? "sudah menikah" : "belum menikah") + 
+    ") " + hasil
+  );
+}
+  </script>
+</body>
+</html>
